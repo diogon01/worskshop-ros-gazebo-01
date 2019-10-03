@@ -1,13 +1,10 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(tower_flare_gazebo)
-
 add_definitions(-std=c++11)
-
 #--------------------------#
 # CMakeLists.txt do projeto#
 # Esse pacote é dedicado aos arquivos de simulações do Gazebo#
 #--------------------------#
-
 find_package(gazebo REQUIRED)
 
 if (NO_ROS)
@@ -27,7 +24,6 @@ catkin_package(
 )
 
 include_directories(include ${catkin_INCLUDE_DIRS})
-
 
 foreach (dir launch models resource worlds)
     install(DIRECTORY ${dir}/
