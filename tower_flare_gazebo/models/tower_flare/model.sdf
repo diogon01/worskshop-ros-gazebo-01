@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+    <model name="Torre flare">
+        <static>true</static>
+        <link name="link">
+            <pose>0 0 0 0 0 0</pose>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://tower_flare/meshes/all_partes.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://tower_flare/meshes/all_partes.dae</uri>
+                    </mesh>
+                </geometry>
+                <!-- <material>
+                     <script>
+                         <uri> model://parede_risers_2/parede_lisa/materials/scripts</uri>
+                         <uri> model://parede_risers_2/parede_lisa/materials/textures</uri>
+                         <name>Parede_lisa/Normal</name>
+                     </script>
+                 </material>-->
+            </visual>
+        </link>
+    </model>
+</sdf>
